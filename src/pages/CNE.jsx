@@ -45,8 +45,8 @@ export default function CNE() {
 
           {/* Right column */}
           <div className="bg-indigo-100 md:col-span-2">
-            <div className="p-16 flex justify-center  items-center h-full min-h-[300px]">
-              <p>Maybe a picture here?</p>
+            <div className="flex justify-center  items-center h-full min-h-[300px]">
+              <img src="/images/cne/desktop/Homepage.png" />
             </div>
           </div>
         </div>
