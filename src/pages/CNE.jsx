@@ -84,7 +84,7 @@ export default function CNE() {
           <section className="two-column-layout">
             <div className="bg-gray-200">
               <div className="p-16 flex justify-center  items-center h-full min-h-[300px]">
-                <p>Maybe a picture here?</p>
+                <img src="/images/cne/desktop/partnersnew.png" />
               </div>
             </div>
             <dl className="mt-10 space-y-8 text-gray-900">
@@ -104,7 +104,7 @@ export default function CNE() {
         {/* Left column */}
         <div className="panel two-column-layout">
           <div>
-            <h2 className="h2-small text-white">Homepage</h2>
+            <h2 className="h2-small text-white">CNE Partners Page</h2>
             <p className="text-lg text-white">
               We redesigned the CNE homepage to be welcoming to a wide range of visitors, including
               families, community educators, and donors. The hompage showcases CNE's services,
@@ -116,7 +116,7 @@ export default function CNE() {
 
           {/* Right column */}
           <div className="flex gap-5 mt-10 md:mt-0">
-            <Device width="200px" imageUrl="/images/cne/mobile/homepage.png" />
+            <Device width="200px" imageUrl="/images/cne/mobile/Partnersnew.png" />
             <Device width="200px" className="top-[-30px]" imageUrl="/images/cne/mobile/ccap.png" />
           </div>
         </div>
