@@ -11,12 +11,12 @@ const projects = [
     url: '/case-studies/cne/',
   },
   {
-    id: 'aux',
-    title: 'The AUX',
+    id: 'atm',
+    title: 'Answer The Moment',
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
-    imageUrl: './images/aux/aux.jpg',
+    imageUrl: './images/atm/atm.png',
     fit: 'cover',
-    url: '/case-studies/aux/',
+    url: '/case-studies/atm/',
   },
   {
     id: 'eyc',

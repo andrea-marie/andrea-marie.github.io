@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import AUX from './pages/AUX';
+import ATM from './pages/ATM';
 import CNE from './pages/CNE';
 import EYC from './pages/EYC';
 import Home from './pages/Home';
@@ -29,7 +29,7 @@ function App() {
           <Route path="/bio/" element={<Bio />} />
           <Route path="/tips/" element={<Tips />} />
           <Route path="/case-studies/" element={<CaseStudies />} />
-          <Route path="/case-studies/aux/" element={<AUX />} />
+          <Route path="/case-studies/atm/" element={<ATM />} />
           <Route path="/case-studies/cne/" element={<CNE />} />
           <Route path="/case-studies/eyc/" element={<EYC />} />
         </Routes>

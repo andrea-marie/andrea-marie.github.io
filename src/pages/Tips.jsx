@@ -1,10 +1,27 @@
 import React from 'react';
 import Nav from '../components/Nav.jsx';
+import Laptop from '../components/devices/Laptop.jsx';
+import EmblaCarousel from '../components/carousel/Carousel.jsx';
+import CarouselSlide from '../components/carousel/CarouselSlide.jsx';
 
 export default function Tips() {
   return (
     <>
       <Nav />
+      <div className="bg-[#0076bc] p-8">
+        <EmblaCarousel>
+          <CarouselSlide className="  p-12">
+            <Laptop width="80%" imageUrl="./images/cne/desktop/ccap.png" />
+          </CarouselSlide>
+          <CarouselSlide className="  p-12">
+            <Laptop width="80%" imageUrl="./images/cne/desktop/partnersnew.png" />
+          </CarouselSlide>
+          <CarouselSlide className="  p-12">
+            <Laptop width="80%" imageUrl="./images/cne/desktop/map.png" />
+            <p className='text-white my-8 text-xl text-center font-bold'>This is an interactive map of CNE's childcare providers</p>
+          </CarouselSlide>
+        </EmblaCarousel>
+      </div>
       <section className="panel">
         <h2>Resume / Portfolio Tips</h2>
 
@@ -51,6 +68,7 @@ export default function Tips() {
         </p>
         <ul>
           <li>
+            
             <a
               className="link-highlight"
               href="https://tailwindcss.com/docs/installation/using-vite"

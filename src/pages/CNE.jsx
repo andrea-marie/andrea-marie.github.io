@@ -1,6 +1,9 @@
 import React from 'react';
 import Device from '../components/Device.jsx';
 import Nav from '../components/Nav.jsx';
+import Laptop from '../components/devices/Laptop.jsx';
+import EmblaCarousel from '../components/carousel/Carousel.jsx';
+import CarouselSlide from '../components/carousel/CarouselSlide.jsx';
 
 export default function CNE() {
   const features = [
@@ -84,6 +87,7 @@ export default function CNE() {
           <section className="two-column-layout">
             <div className="bg-gray-200">
               <div className="p-16 flex justify-center  items-center h-full min-h-[300px]">
+                <h2>Change this picture</h2>
                 <img src="/images/cne/desktop/partnersnew.png" />
               </div>
             </div>
@@ -102,22 +106,29 @@ export default function CNE() {
       {/* Homepage 1 */}
       <section className="bg-[#185977]">
         {/* Left column */}
-        <div className="panel two-column-layout">
+        <div className="panel">
           <div>
             <h2 className="h2-small text-white">CNE Partners Page</h2>
-            <p className="text-lg text-white">
-              We redesigned the CNE homepage to be welcoming to a wide range of visitors, including
-              families, community educators, and donors. The hompage showcases CNE's services,
-              current initiatives, and impact through an engaging, accessible design. It also
-              highlights key accomplishments, answers common questions, and offers an easy way to
-              connect.
+            <p className="text-lg text-white mb-8">
+              To: do Explain the desig of the partners page and why it is great
             </p>
           </div>
 
           {/* Right column */}
-          <div className="flex gap-5 mt-10 md:mt-0">
-            <Device width="200px" imageUrl="/images/cne/mobile/Partnersnew.png" />
-            <Device width="200px" className="top-[-30px]" imageUrl="/images/cne/mobile/ccap.png" />
+          <div className="flex gap-[80px] mt-10 md:mt-0">
+            {/* <img className="w-[700px]" src="/images/cne/desktop/partnersnew.png" /> */}
+            {/* <img className="w-[200px]" src="/images/cne/mobile/Partnersnew.png" /> */}
+            <Device
+              deviceType="ipad"
+              className="h-[750px]"
+              width="550px"
+              imageUrl="/images/cne/desktop/partnersnew.png"
+            />
+            <Device
+              className="h-[480px]"
+              width="250px"
+              imageUrl="/images/cne/mobile/Partnersnew.png"
+            />
           </div>
         </div>
       </section>
@@ -147,20 +158,22 @@ export default function CNE() {
           </div>
         </div>
       </section>
-
-      {/* Section 3 */}
-      <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}>
-        <div className="panel max-w-4xl m-auto">
-          <h2 className="text-3xl font-abril mb-6 text-gray-900">Programs</h2>
-          <p className="text-lg text-gray-900 mb-12">
-            To help parents and caregivers understand the importance of early childhood education,
-            we created a simple program overview page, organized by age group. This page provides a
-            clear and accessible explanation of CNE's various programs, including home visits,
-            developmental screenings, childcare providers and supports, and more.
-          </p>
-          <img className="w-full" src="/images/cne/desktop/programs.png" alt="Programs" />
-        </div>
-      </section>
+      <div className="bg-[#0076bc] p-8">
+        <EmblaCarousel>
+          <CarouselSlide className="  p-12">
+            <Laptop width="80%" imageUrl="./images/cne/desktop/ccap.png" />
+          </CarouselSlide>
+          <CarouselSlide className="  p-12">
+            <Laptop width="80%" imageUrl="./images/cne/desktop/partnersnew.png" />
+          </CarouselSlide>
+          <CarouselSlide className="  p-12">
+            <Laptop width="80%" imageUrl="./images/cne/desktop/map.png" />
+            <p className="text-white my-8 text-xl text-center font-bold">
+              This is an interactive map of CNE's childcare providers
+            </p>
+          </CarouselSlide>
+        </EmblaCarousel>
+      </div>
     </>
   );
 }
